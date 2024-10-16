@@ -1,6 +1,6 @@
 # Anomaly detection using `Isolation Forest for Streaming Anomaly Detection` (iForestASD)
 
-Note : This project is a part of submission to Cobblestone Energy as part of their recruitment process. I am truly grateful to the recruitment team at Cobblestone Energy for this opportunity. I gained a wealth of knowledge and thoroughly enjoyed the process of working on this project.
+Note : This project is a part of submission to Cobblestone Energy as part of their recruitment process. I am truly grateful to the recruitment team at Cobblestone Energy for this opportunity. 
 
 ## Overview
 

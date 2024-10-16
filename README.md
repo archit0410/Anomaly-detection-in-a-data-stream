@@ -4,6 +4,8 @@
 
 The **Isolation Forest for Streaming Anomaly Detection (iForestASD)** is a real-time system designed to identify anomalies in continuous data streams. Leveraging the **Isolation Forest** algorithm from scikit-learn, this system processes incoming data in sliding windows, detects outliers, and visualizes the results dynamically. This README provides an overview of the project, its underlying concepts, references to relevant research papers, and instructions on how to set it up and run.
 
+Note : The `anomaly-detector.ipynb` is mainly to provide explaination to the code I have written, since Jupyter Notebooks handle plotting differently than standalone Python scripts, and certain configurations are required for the animation to work correctly in notebooks. Thus to run the code use the `anomaly-detector.py`
+
 ## Features
 
 - **Continuous Data Stream Generation**: Simulates a data stream with regular patterns, seasonal variations, noise, and occasional anomalies.
@@ -44,25 +46,6 @@ The implementation of iForestASD is inspired by foundational research in anomaly
 
 These papers provide insights into the mechanisms of anomaly detection, the effectiveness of Isolation Forests, and strategies for handling concept drift in streaming data.
 
-## Design and Development
-
-The development of iForestASD involved several key considerations to ensure effective and efficient anomaly detection:
-
-1. **Algorithm Selection**:
-    - **Isolation Forest** was chosen for its ability to handle high-dimensional data and its effectiveness in isolating anomalies without assuming any underlying data distribution.
-
-2. **Sliding Window Approach**:
-    - Implemented a **sliding window** mechanism to focus on recent data points, allowing the model to adapt to changing patterns and trends in the data stream.
-
-3. **Drift Detection**:
-    - Incorporated a **drift detection** mechanism by monitoring the anomaly rate. When the anomaly rate exceeds the `drift_threshold`, it indicates a potential change in data distribution, prompting the model to retrain on the latest data.
-
-4. **Real-Time Visualization**:
-    - Utilized Matplotlib's `FuncAnimation` to create an interactive and real-time visualization of the data stream, making it easier to monitor anomaly detection performance dynamically.
-
-5. **Parameter Tuning**:
-    - Parameters such as `window_size`, `n_estimators`, `anomaly_threshold`, and `drift_threshold` were empirically set based on experimentation and referenced literature to balance sensitivity and specificity in anomaly detection.
-
 ## Installation and Usage
 
 ### Prerequisites
@@ -83,14 +66,14 @@ pip install numpy matplotlib scikit-learn
 
 1. **Save the Script**:
 
-    Save the provided Python code to a file named `iforest_asd.py`.
+    Save the provided Python code to a file named `anomaly-detector.py`.
 
 2. **Execute the Script**:
 
     Run the script using Python:
 
     ```bash
-    python iforest_asd.py
+    python anomaly-detector.py
     ```
 
     A Matplotlib window will appear, displaying the real-time data stream with anomalies highlighted in red.
@@ -122,25 +105,6 @@ Additionally, you can tweak the `continuous_data_stream` function parameters:
 - `anomaly_rate`: The probability of an anomaly occurring at each step.
 - `noise_level`: The standard deviation of the Gaussian noise added to the data.
 
-## Limitations and Future Work
-
-While the current implementation provides a robust framework for streaming anomaly detection, there are areas for potential improvement:
-
-1. **Feature Engineering**:
-    - Incorporating additional features such as moving averages, rolling statistics, or lagged values could enhance the model's ability to detect complex anomalies.
-
-2. **Advanced Drift Detection**:
-    - Implementing more sophisticated drift detection algorithms can improve the system's responsiveness to subtle changes in data patterns.
-
-3. **Scalability**:
-    - Optimizing the code for larger data streams or higher velocities can make the system more scalable and suitable for industrial applications.
-
-4. **Evaluation Metrics**:
-    - Integrating evaluation metrics such as precision, recall, and F1-score can provide quantitative insights into the model's performance.
-
-5. **User Interface Enhancements**:
-    - Developing a more interactive or user-friendly interface using advanced visualization libraries like Plotly or Bokeh can improve usability.
-
 ## Acknowledgments
 
 This project was developed based on insights from seminal research in anomaly detection and machine learning. Special thanks to the authors of the referenced papers for their foundational work that made this implementation possible.
@@ -149,12 +113,6 @@ This project was developed based on insights from seminal research in anomaly de
 
 For questions, suggestions, or contributions, please contact:
 
-- **Your Name**
-- **Email**: [your.email@example.com]
-- **GitHub**: [your-github-profile](https://github.com/your-github-profile)
-
-*Replace the placeholders with your actual contact information.*
-
----
-
-*This README was generated to provide a comprehensive overview of the Isolation Forest for Streaming Anomaly Detection (iForestASD) project, outlining its functionality, design considerations, and usage instructions.*
+- **Archit Panda**
+- **Email**: [realarchit83@gmail.com]
+- **GitHub**: [github-profile](https://github.com/archit0410)

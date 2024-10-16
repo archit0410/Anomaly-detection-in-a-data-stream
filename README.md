@@ -34,17 +34,12 @@ Note : The `anomaly-detector.ipynb` is mainly to provide explaination to the cod
 
 The implementation of iForestASD is inspired by foundational research in anomaly detection and concept drift. Key references include:
 
-1. **Isolation Forest**:
-    - **Liu, F. T., Ting, K. M., & Zhou, Z.-H. (2008). Isolation Forest.** In *2008 Eighth IEEE International Conference on Data Mining* (pp. 413-422). IEEE.
-    - *Link*: [IEEE Xplore](https://ieeexplore.ieee.org/document/4781136)
-
-2. **Anomaly Detection in Data Streams**:
-    - **Chandola, V., Banerjee, A., & Kumar, V. (2009). Anomaly Detection: A Survey.** *ACM Computing Surveys (CSUR)*, 41(3), 1-58.
-    - *Link*: [ACM Digital Library](https://dl.acm.org/doi/10.1145/1541880.1541882)
-
-3. **Concept Drift and Model Adaptation**:
-    - **Gama, J., Žliobaitė, I., Bifet, A., Pechenizkiy, M., & Bouchachia, A. (2014). A Survey on Concept Drift Adaptation.** *ACM Computing Surveys (CSUR)*, 46(4), 1-37.
-    - *Link*: [ACM Digital Library](https://dl.acm.org/doi/10.1145/2523813)
+- [An Anomaly Detection Approach Based on Isolation Forest for Streaming Data Using Sliding Window (Ding & Fei, 2013)](https://www.sciencedirect.com/science/article/pii/S1474667016314999?via%3Dihub) [1]
+- [Isolation Forest (Liu, Ting, & Zhou, 2011)](https://www.researchgate.net/publication/224384174_Isolation_Forest) [2]
+- [Anomaly Detection for Data Streams Based on Isolation Forest using Scikit-multiflow](https://hal.science/hal-02874869v2/file/IForestASD_ScikitMultiflow_Version2_PourHAL.pdf) [3]
+- [Review of Anomaly Detection Algorithms for Data Streams](https://doi.org/10.3390/app13106353) [4]
+- [Concept Drift blog post](https://neptune.ai/blog/concept-drift-best-practices) [5]
+- [iForestASD code reference](https://github.com/MariamBARRY/skmultiflow_IForestASD/tree/master) [6] 
 
 These papers provide insights into the mechanisms of anomaly detection, the effectiveness of Isolation Forests, and strategies for handling concept drift in streaming data.
 

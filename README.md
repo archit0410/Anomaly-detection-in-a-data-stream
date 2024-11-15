@@ -2,6 +2,8 @@
 
 Note : This project is a part of submission to Cobblestone Energy as part of their recruitment process. I am truly grateful to the recruitment team at Cobblestone Energy for this opportunity. 
 
+Project Demo : https://youtu.be/wjcbpDKuLyw
+
 ## Overview
 
 The **Isolation Forest for Streaming Anomaly Detection (iForestASD)** is a real-time system designed to identify anomalies in continuous data streams. Leveraging the **Isolation Forest** algorithm from scikit-learn, this system processes incoming data in sliding windows, detects outliers, and visualizes the results dynamically. This README provides an overview of the project, its underlying concepts, references to relevant research papers, and instructions on how to set it up and run.
